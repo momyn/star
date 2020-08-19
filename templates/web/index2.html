@@ -1,0 +1,555 @@
+{% extends 'web/base.html' %}
+{% block header %} bg1 {% endblock header %}
+{% block content %}
+{#<!DOCTYPE html>#}
+{#<html lang="ru">#}
+{#<head>#}
+{#	<meta charset="UTF-8">#}
+{#	<link rel="stylesheet" type="text/css" href="assets/css/style.css">#}
+{#	<link rel="stylesheet" href="assets/css/bootstrap.min.css">#}
+{#    <link rel="stylesheet" href="assets/css/owl.carousel.css">#}
+{#    <link rel="stylesheet" href="assets/css/owl.theme.default.css">#}
+{#    <link href = "https://fonts.googleapis.com/css2? family = Poppins: ital, wght @ 0,100; 0,500; 0,600; 0,800; 0,900; 1,500 & family = Roboto & display = swap" rel = "stylesheet" >#}
+{#    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"#}
+{#integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">#}
+{#    <script src="assets/js/script.js"></script>#}
+{#    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">#}
+{#    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">#}
+{##}
+{#	<title>Stargem Store</title>#}
+{##}
+{#</head>#}
+<body>
+  <!-- Header -->
+  <div class="container">
+    <div class="row">
+          <div class="logo">
+            <dir class="col-md-2" style="float: left;">
+              <img class="logoimg" style="max-height: 85px;" src="assets/img/logo1.png">
+              <img class="logoimg1" style="max-height: 45px;" src="assets/img/stargem1.png">
+            </dir>
+               <div class="col-md-8 men" style="float: right;">
+                <ul id="navbar">
+                      <li><a href="index.html">Главная</a></li>
+                      <li><a href="product.html">Каталог</a></li>
+                      <li><a href="#">Доставка</a></li>
+                      <li><a href="#">Контакты</a></li> </ul>
+                <div class="col-md-5" style="float: right;margin-top: 6px;">
+                  <i class="fa fa-phone-square" style="color: #000;"></i>&nbsp;
+                  <a href="https://nextin.me/admin_assets/img/brif1.pdf" style="color: #000;  font-size: 15px;">8 747 564 37 97</a>&nbsp;
+                   <i class="fab fa-whatsapp" aria-hidden="true" style="color: #000;"></i>&nbsp;
+                  <a href="https://nextin.me/admin_assets/img/brif1.pdf" style="color: #000; font-size: 15px;">8 747 564 37 97</a>
+                </div>
+               </div>
+               <div>
+               </div>
+
+           </div>
+           <header class="header">
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="product.html">Каталог</a></li>
+    <li><a href="#">Доставка</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+</header>
+
+    </div>
+  </div>
+
+        <!-- Slider -->
+        <div class="slider">
+          <div class="slider__wrapper">
+            <div class="slider__item">
+              <div class="slide-text">
+                <h4>МАГАЗИН</h4>
+                <h1 class="slide-of">STARGEM <br>COSMETICS</h1>
+                <p>Популярные косметики от самых <br> лучших брендов</p>
+                <button class="click"><a href="">Подробнее</a></button><br>
+                <!-- <a href="#"><img src="assets/img/nex.svg"></a> -->
+              </div>
+              <div class="none" style="height: 627px;"><img src="assets/img/slide.png">
+              <div class="mobile" style="height: 627px;"><img src="assets/img/mobile-slaid.png"></div>
+
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slide-text">
+                <h4>МАГАЗИН</h4>
+                <h1 class="slide-of">STARGEM <br>COSMETICS</h1>
+                <p>Популярные косметики от самых <br> лучших брендов</p>
+                <button class="click"><a href="">Подробнее</a></button><br>
+                <!-- <a href="#"><img src="assets/img/nex.svg"></a> -->
+              </div>
+              <div class="none" style="height: 627px;"><img src="assets/img/slide.png">
+              <div class="mobile" style="height: 627px;"><img src="assets/img/mobile-slaid.png"></div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slide-text">
+                <h4>МАГАЗИН</h4>
+                <h1 class="slide-of">STARGEM <br>COSMETICS</h1>
+                <p>Популярные косметики от самых <br> лучших брендов</p>
+                <button class="click"><a href="">Подробнее</a></button><br>
+                <!-- <a href="#"><img src="assets/img/nex.svg"></a> -->
+              </div>
+              <div class="none" style="height: 627px;"><img src="assets/img/slide.png">
+              <div class="mobile" style="height: 627px;"><img src="assets/img/mobile-slaid.png"></div>
+
+              </div>
+            </div>
+          </div>
+              <a class="slider__control slider__control_left" href="#" role="button"></a>
+              <a class="slider__control slider__control_right" href="#" role="button"></a>
+        </div>
+
+{#        <!-- 3 category -->#}
+{#        <div class="bgimg"></div>#}
+{#          <div class="container mobi">#}
+{#            <div class="cart">#}
+{#              <div class="row">#}
+{#                <div class="col-md-4 top1">#}
+{#                    <div class="block1">#}
+{#                      <h3 >CLEAR DEW</h3>#}
+{#                      <h2>Увлажняющий крем<br>для тело</h2>#}
+{#                    </div>#}
+{#                  <img style="width: 300px;" src="assets/img/phone1.png">#}
+{#                </div>#}
+{#                <div class="col-md-4 top1">#}
+{#                    <div class="block2">#}
+{#                      <h3 >CLEAR DEW</h3>#}
+{#                      <h2>Увлажняющий крем<br>для тело</h2>#}
+{#                    </div>#}
+{#                  <img style="width: 300px;" src="assets/img/phone2.png">#}
+{#                </div>#}
+{#                <div class="col-md-4 top1">#}
+{#                    <div class="block1">#}
+{#                      <h3 >CLEAR DEW</h3>#}
+{#                      <h2>Увлажняющий крем<br>для тело</h2>#}
+{#                    </div>#}
+{#                  <img style="width: 300px;" src="assets/img/phone3.png">#}
+{#                </div>#}
+{#             <img style="float: right;position: absolute;right: 50px;/* top: 800px; */z-index: -1;" src="assets/img/vector.png">#}
+{#              </div>#}
+{#            </div>#}
+{#          </div>#}
+
+      <!-- Product  -->
+      <div class="container">
+        <div class="tovary">
+          <h2>Популярные товары</h2>
+          <div class="row tope">
+            <div class="col-md-3 tov">
+              <div class="product">
+                 <p>Крем Clear Dew</p>
+                 <h5>1000 тг</h5><br>
+                 <button class="click1"><a href="">Заказать</a></button>
+              </div>
+              <div class="product-img">
+                <img src="assets/img/product2.png">
+              </div>
+          </div>
+          <div class="col-md-3 tov">
+              <div class="product">
+                 <p>Крем Clear Dew</p>
+                 <h5>1000 тг</h5><br>
+                 <button class="click1"><a href="">Заказать</a></button>
+              </div>
+              <div class="product-img">
+                <img src="assets/img/product2.png">
+              </div>
+          </div>
+          <div class="col-md-3 tov">
+              <div class="product">
+                 <p>Крем Clear Dew</p>
+                 <h5>1000 тг</h5><br>
+                 <button class="click1"><a href="">Заказать</a></button>
+              </div>
+              <div class="product-img">
+                <img src="assets/img/product2.png">
+              </div>
+          </div>
+          <div class="col-md-3 tov">
+              <div class="product">
+                 <p>Крем Clear Dew</p>
+                 <h5>1000 тг</h5><br>
+                 <button class="click1"><a href="">Заказать</a></button>
+              </div>
+              <div class="product-img">
+                <img src="assets/img/product2.png">
+              </div>
+          </div>
+          <div class="col-md-3 tov">
+              <div class="product">
+                 <p>Крем Clear Dew</p>
+                 <h5>1000 тг</h5><br>
+                 <button class="click1"><a href="">Заказать</a></button>
+              </div>
+              <div class="product-img">
+                <img src="assets/img/product2.png">
+              </div>
+          </div>
+          <div class="col-md-3 tov">
+              <div class="product">
+                 <p>Крем Clear Dew</p>
+                 <h5>1000 тг</h5><br>
+                 <button class="click1"><a href="">Заказать</a></button>
+              </div>
+              <div class="product-img">
+                <img src="assets/img/product2.png">
+              </div>
+          </div>
+          <div class="col-md-3 tov">
+              <div class="product">
+                 <p>Крем Clear Dew</p>
+                 <h5>1000 тг</h5><br>
+                 <button class="click1"><a href="">Заказать</a></button>
+              </div>
+              <div class="product-img">
+                <img src="assets/img/product2.png">
+              </div>
+          </div>
+          <div class="col-md-3 tov">
+              <div class="product">
+                 <p>Крем Clear Dew</p>
+                 <h5>1000 тг</h5><br>
+                 <button class="click1"><a href="">Заказать</a></button>
+              </div>
+              <div class="product-img">
+                <img src="assets/img/product2.png">
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- Acsess -->
+    <div class="bg2"></div>
+      <div class="container">
+        <div class="row ac">
+          <div class="acsess">
+           <h3>Аксессуары</h3>
+           <h2>Подарки для<br>ваших близких</h2>
+           <img src="assets/img/vector.png">
+          </div>
+          <div class="col-md-3 tov-acsess">
+            <div class="product1">
+               <p>Крем Clear Dew</p>
+               <h5>1000 тг</h5>
+               <button class="click1"><a href="">Заказать</a></button>
+            </div>
+            <div class="product1-img">
+              <img src="assets/img/blocnot.png">
+            </div>
+        </div>
+        <div class="col-md-3 tov-acsess">
+            <div class="product1">
+               <p>Крем Clear Dew</p>
+               <h5>1000 тг</h5>
+               <button class="click1"><a href="">Заказать</a></button>
+            </div>
+            <div class="product1-img">
+              <img src="assets/img/blocnot.png">
+            </div>
+        </div>
+         <img src="assets/img/vector.png">
+        </div>
+      </div>
+
+
+  <section>
+    <div class="container">
+        <div class="foter">
+          <div class="row">
+          <div class="col-md-2" style="float: left;">
+              <img style="max-height: 150px;" src="assets/img/logo1.png">
+          </div>
+          <div class="col-md-3 foot">
+              <p>The Company Name Inc.<br>
+                  9870 St Vincent Place,<br>
+                  Glasgow, DC 45<br>
+                  <i class="fa fa-instagram fa-2x" style="color: #FF6A00;margin-top: 10px;"></i>&nbsp;&nbsp;
+                  <i class="fa fa-whatsapp fa-2x" style="color: #FF6A00;margin-top: 10px;"></i>
+              </p>
+          </div>
+          <div class="col-md-3 foot1">
+              <h6>ТОП КАТАЛОГ</h6>
+              <a href="">Кремы</a><br>
+              <a href="">Посуды</a><br>
+              <a href="">Акссесуары</a><br>
+              <a href="">Тушь</a>
+          </div>
+          <div class="col-md-3 foot1">
+              <h6>КОНТАКТЫ</h6>
+              <a href="">800-2345-6799</a><br>
+              <a href="">800-2345-6799</a><br>
+              <a href="">demo@demo.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script>
+    'use strict';
+    var multiItemSlider = (function () {
+
+      function _isElementVisible(element) {
+        var rect = element.getBoundingClientRect(),
+          vWidth = window.innerWidth || doc.documentElement.clientWidth,
+          vHeight = window.innerHeight || doc.documentElement.clientHeight,
+          elemFromPoint = function (x, y) { return document.elementFromPoint(x, y) };
+        if (rect.right < 0 || rect.bottom < 0
+          || rect.left > vWidth || rect.top > vHeight)
+          return false;
+        return (
+          element.contains(elemFromPoint(rect.left, rect.top))
+          || element.contains(elemFromPoint(rect.right, rect.top))
+          || element.contains(elemFromPoint(rect.right, rect.bottom))
+          || element.contains(elemFromPoint(rect.left, rect.bottom))
+        );
+      }
+
+      return function (selector, config) {
+        var
+          _mainElement = document.querySelector(selector), // основный элемент блока
+          _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
+          _sliderItems = _mainElement.querySelectorAll('.slider__item'), // элементы (.slider-item)
+          _sliderControls = _mainElement.querySelectorAll('.slider__control'), // элементы управления
+          _sliderControlLeft = _mainElement.querySelector('.slider__control_left'), // кнопка "LEFT"
+          _sliderControlRight = _mainElement.querySelector('.slider__control_right'), // кнопка "RIGHT"
+          _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
+          _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента
+          _positionLeftItem = 0, // позиция левого активного элемента
+          _transform = 0, // значение транфсофрмации .slider_wrapper
+          _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
+          _items = [], // массив элементов
+          _interval = 0,
+          _html = _mainElement.innerHTML,
+          _states = [
+            { active: false, minWidth: 0, count: 1 },
+            { active: false, minWidth: 980, count: 2 }
+          ],
+          _config = {
+            isCycling: false, // автоматическая смена слайдов
+            direction: 'right', // направление смены слайдов
+            interval: 5000, // интервал между автоматической сменой слайдов
+            pause: true // устанавливать ли паузу при поднесении курсора к слайдеру
+          };
+
+        for (var key in config) {
+          if (key in _config) {
+            _config[key] = config[key];
+          }
+        }
+
+        // наполнение массива _items
+        _sliderItems.forEach(function (item, index) {
+          _items.push({ item: item, position: index, transform: 0 });
+        });
+
+        var _setActive = function () {
+          var _index = 0;
+          var width = parseFloat(document.body.clientWidth);
+          _states.forEach(function (item, index, arr) {
+            _states[index].active = false;
+            if (width >= _states[index].minWidth)
+              _index = index;
+          });
+          _states[_index].active = true;
+        }
+
+        var _getActive = function () {
+          var _index;
+          _states.forEach(function (item, index, arr) {
+            if (_states[index].active) {
+              _index = index;
+            }
+          });
+          return _index;
+        }
+
+        var position = {
+          getItemMin: function () {
+            var indexItem = 0;
+            _items.forEach(function (item, index) {
+              if (item.position < _items[indexItem].position) {
+                indexItem = index;
+              }
+            });
+            return indexItem;
+          },
+          getItemMax: function () {
+            var indexItem = 0;
+            _items.forEach(function (item, index) {
+              if (item.position > _items[indexItem].position) {
+                indexItem = index;
+              }
+            });
+            return indexItem;
+          },
+          getMin: function () {
+            return _items[position.getItemMin()].position;
+          },
+          getMax: function () {
+            return _items[position.getItemMax()].position;
+          }
+        }
+
+        var _transformItem = function (direction) {
+          var nextItem;
+          if (!_isElementVisible(_mainElement)) {
+            return;
+          }
+          if (direction === 'left') {
+            _positionLeftItem++;
+            if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) > position.getMax()) {
+              nextItem = position.getItemMin();
+              _items[nextItem].position = position.getMax() + 1;
+              _items[nextItem].transform += _items.length * 100;
+              _items[nextItem].item.style.transform = 'translateX(' + _items[nextItem].transform + '%)';
+            }
+            _transform -= _step;
+          }
+          if (direction === 'right') {
+            _positionLeftItem--;
+            if (_positionLeftItem < position.getMin()) {
+              nextItem = position.getItemMax();
+              _items[nextItem].position = position.getMin() - 1;
+              _items[nextItem].transform -= _items.length * 100;
+              _items[nextItem].item.style.transform = 'translateX(' + _items[nextItem].transform + '%)';
+            }
+            _transform += _step;
+          }
+          _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
+        }
+
+        var _cycle = function (direction) {
+          if (!_config.isCycling) {
+            return;
+          }
+          _interval = setInterval(function () {
+            _transformItem(direction);
+          }, _config.interval);
+        }
+
+        // обработчик события click для кнопок "назад" и "вперед"
+        var _controlClick = function (e) {
+          if (e.target.classList.contains('slider__control')) {
+            e.preventDefault();
+            var direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
+            _transformItem(direction);
+            clearInterval(_interval);
+            _cycle(_config.direction);
+          }
+        };
+
+        // обработка события изменения видимости страницы
+        var _handleVisibilityChange = function () {
+          if (document.visibilityState === "hidden") {
+            clearInterval(_interval);
+          } else {
+            clearInterval(_interval);
+            _cycle(_config.direction);
+          }
+        }
+
+        var _refresh = function () {
+          clearInterval(_interval);
+          _mainElement.innerHTML = _html;
+          _sliderWrapper = _mainElement.querySelector('.slider__wrapper');
+          _sliderItems = _mainElement.querySelectorAll('.slider__item');
+          _sliderControls = _mainElement.querySelectorAll('.slider__control');
+          _sliderControlLeft = _mainElement.querySelector('.slider__control_left');
+          _sliderControlRight = _mainElement.querySelector('.slider__control_right');
+          _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width);
+          _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width);
+          _positionLeftItem = 0;
+          _transform = 0;
+          _step = _itemWidth / _wrapperWidth * 100;
+          _items = [];
+          _sliderItems.forEach(function (item, index) {
+            _items.push({ item: item, position: index, transform: 0 });
+          });
+        }
+
+        var _setUpListeners = function () {
+          _mainElement.addEventListener('click', _controlClick);
+          if (_config.pause && _config.isCycling) {
+            _mainElement.addEventListener('mouseenter', function () {
+              clearInterval(_interval);
+            });
+            _mainElement.addEventListener('mouseleave', function () {
+              clearInterval(_interval);
+              _cycle(_config.direction);
+            });
+          }
+          document.addEventListener('visibilitychange', _handleVisibilityChange, false);
+          window.addEventListener('resize', function () {
+            var
+              _index = 0,
+              width = parseFloat(document.body.clientWidth);
+            _states.forEach(function (item, index, arr) {
+              if (width >= _states[index].minWidth)
+                _index = index;
+            });
+            if (_index !== _getActive()) {
+              _setActive();
+              _refresh();
+            }
+          });
+        }
+
+        // инициализация
+        _setUpListeners();
+        if (document.visibilityState === "visible") {
+          _cycle(_config.direction);
+        }
+        _setActive();
+
+        return {
+          right: function () { // метод right
+            _transformItem('right');
+          },
+          left: function () { // метод left
+            _transformItem('left');
+          },
+          stop: function () { // метод stop
+            _config.isCycling = false;
+            clearInterval(_interval);
+          },
+          cycle: function () { // метод cycle
+            _config.isCycling = true;
+            clearInterval(_interval);
+            _cycle();
+          }
+        }
+
+      }
+    }());
+
+    var slider = multiItemSlider('.slider', {
+      isCycling: true
+    })
+
+  </script>
+<script>
+              'use strict';
+
+          var searchBox = document.querySelectorAll('.search-box input[type="text"] + span');
+
+          searchBox.forEach(elm => {
+            elm.addEventListener('click', () => {
+              elm.previousElementSibling.value = '';
+            });
+          });
+</script>
+
+</body>
+</html>
+{% endblock content %}

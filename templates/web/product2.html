@@ -1,0 +1,137 @@
+{% load static %}
+{% block header %}  {% endblock header %}
+<!DOCTYPE html>
+{% block movie %}
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css'%}">
+	<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.css' %}">
+    <link href = "https://fonts.googleapis.com/css2? family = Poppins: ital, wght @ 0,100; 0,500; 0,600; 0,800; 0,900; 1,500 & family = Roboto & display = swap" rel = "stylesheet" >
+    <link rel="stylesheet" href="{% static 'https://use.fontawesome.com/releases/v5.6.1/css/all.css' %}"
+integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="{% static 'assets/js/script.js' %}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' %}">
+
+	<title>Stargem Store</title>
+
+</head>
+<body>
+   <!-- Header -->
+  <div class="container">
+    <div class="row">
+          <div class="logo">
+            <dir class="col-md-2" style="float: left;">
+              <img class="logoimg" style="max-height: 85px;" src="{% static 'assets/img/logo1.png' %}">
+              <img class="logoimg1" style="max-height: 45px;" src="{% static 'assets/img/stargem1.png' %}">
+            </dir>
+               <div class="col-md-8 men" style="float: right;">
+                <ul id="navbar">
+                      <li><a href="index.html">Главная</a></li>
+                      <li><a href="product.html">Каталог</a></li>
+                      <li><a href="#">Доставка</a></li>
+                      <li><a href="#">Контакты</a></li> </ul>
+                <div class="col-md-5" style="float: right;margin-top: 6px;">
+                  <i class="fa fa-phone-square" style="color: #000;"></i>&nbsp;
+                  <a href="https://nextin.me/admin_assets/img/brif1.pdf" style="color: #000;  font-size: 15px;">8 747 564 37 97</a>&nbsp;
+                   <i class="fab fa-whatsapp" aria-hidden="true" style="color: #000;"></i>&nbsp;
+                  <a href="https://nextin.me/admin_assets/img/brif1.pdf" style="color: #000; font-size: 15px;">8 747 564 37 97</a>
+                </div>
+               </div>
+               <div>
+               </div>
+
+           </div>
+           <header class="header">
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="product.html">Каталог</a></li>
+    <li><a href="#">Доставка</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+</header>
+
+    </div>
+  </div>
+
+      <div class="container" style="background: #FFF0E5;">
+
+      </div>
+      <!-- Product  -->
+        <div class="container">
+            <div class="cart1">
+              <div class="row">
+              {%  for product in movie_call %}
+                <div class="col-md-4 top1">
+                    <div class="block1">
+                      <h3 style="text-transform: uppercase;" >{{ product.name }}</h3>
+                      <h2>{{ product.description }}</h2>
+                    </div>
+                  <a href="{{ product.url }}"><img style="width: 300px;height: 300px;" src="{{ product.image.url }}"></a>
+                </div>
+              {% endfor %}
+              </div>
+            </div>
+          </div>
+
+
+
+  <section class="fut">
+    <div class="container">
+        <div class="foter">
+          <div class="row">
+          <div class="col-md-2" style="float: left;">
+              <img style="max-height: 150px;" src="{% static 'assets/img/logo1.png' %}">
+          </div>
+          <div class="col-md-3 foot">
+              <p>The Company Name Inc.<br>
+                  9870 St Vincent Place,<br>
+                  Glasgow, DC 45<br>
+                  <i class="fa fa-instagram fa-2x" style="color: #FF6A00;margin-top: 10px;"></i>&nbsp;&nbsp;
+                  <i class="fa fa-whatsapp fa-2x" style="color: #FF6A00;margin-top: 10px;"></i>
+              </p>
+          </div>
+          <div class="col-md-3 foot1">
+              <h6>ТОП КАТАЛОГ</h6>
+              <a href="">Кремы</a><br>
+              <a href="">Посуды</a><br>
+              <a href="">Акссесуары</a><br>
+              <a href="">Тушь</a>
+          </div>
+          <div class="col-md-3 foot1">
+              <h6>КОНТАКТЫ</h6>
+              <a href="">800-2345-6799</a><br>
+              <a href="">800-2345-6799</a><br>
+              <a href="">demo@demo.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+<script>
+              'use strict';
+
+          var searchBox = document.querySelectorAll('.search-box input[type="text"] + span');
+
+          searchBox.forEach(elm => {
+            elm.addEventListener('click', () => {
+              elm.previousElementSibling.value = '';
+            });
+          });
+</script>
+
+</body>
+</html>
+{% endblock movie %}
